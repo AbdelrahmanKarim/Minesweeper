@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.Howtoplay">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:openDrawer="start">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:paddingEnd="16dp"
+                android:text="How To Play"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/jakartasans"
+                android:textSize="23sp"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="First Click"
+                android:fontFamily="@font/jakartasans"
+                android:src="@drawable/img_1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="10dp"
+                android:text="Tap on a square to open it.The number indicates exactly how many mines there are surrounding that square.In this case there is only 1 mine touching the opened square."
+                android:textSize="23sp"
+                android:textColor="@android:color/black"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:fontFamily="@font/jakartasans"
+
+                />
+
+            <ImageView
+                android:layout_width="428dp"
+                android:layout_height="146dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="Mark Flag"
+                android:src="@drawable/img_2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="10dp"
+                android:text="When you find a mine, you can flag that square by pressing and holding it.Since there is only one unopened square touching the '1' we know that one is a mine."
+
+                android:textSize="23sp"
+                android:textColor="@android:color/black"
+                android:paddingStart="10dp"
+                android:fontFamily="@font/jakartasans"
+                android:paddingEnd="10dp"/>
+
+            <ImageView
+                android:layout_width="428dp"
+                android:layout_height="234dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="Mine Clicked"
+                android:src="@drawable/img_3" />
+
+            <TextView
+                android:fontFamily="@font/jakartasans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="40dp"
+                android:text="You lost the game when you step on a mine.At that point game shows all the undiscovered mines."
+                android:textSize="23sp"
+                android:textColor="@android:color/black"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"/>
+            <TextView
+                android:fontFamily="@font/jakartasans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="40dp"
+                android:text="To win open all the squares that have no mines."
+                android:textSize="23sp"
+                android:textColor="@android:color/black"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
